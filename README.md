@@ -1,7 +1,7 @@
 #Andrés Gómez Mendoza
  # Desafio DataIFX v1.0
 
-**En DevGuide encontrará la documentación via [swagger] y una colección de muestra via [postman]**
+**En [DevGuide](https://github.com/andresblend7/DesafioDataIfx/tree/master/Dev_Guide) encontrará la documentación via [swagger] y una colección de muestra via [postman]**
 
 
 <h3>Casas disponibles: </h3> 
