@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "0e953623-1c42-4d5f-a4fb-d0584bffd34b",
+		"name": "Desafio DataIFX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Realizar una solicitud",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Nombre usuario\",\r\n    \"lastName\" :\"Appelidos\",\r\n    \"id\" : 152425,\r\n    \"age\" : 24,\r\n    \"house\" : \"Slytherin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44367/api/HouseRequest/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44367",
+					"path": [
+						"api",
+						"HouseRequest",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar una solicitud",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\" : 3,\r\n\r\n    \"houseRequest\":{\r\n        \"name\" : \"Andres mendoza\",\r\n        \"lastName\" :\"Gomez Carlos\",\r\n        \"id\" : 123,\r\n        \"age\" : 19,\r\n        \"house\" : \"Ravenclaw\"\r\n    }\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44367/api/HouseRequest",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44367",
+					"path": [
+						"api",
+						"HouseRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Todas Mis solicitudes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44367/api/HouseRequest/GetMyRequests?id=123",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44367",
+					"path": [
+						"api",
+						"HouseRequest",
+						"GetMyRequests"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar una solicitud",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idUser\":123,\r\n    \"idRequest\" : 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44367/api/HouseRequest",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44367",
+					"path": [
+						"api",
+						"HouseRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Aceptar / Rechazar Una solicitud",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idRequest\" : 1,\r\n    \"Accept\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44367/api/HouseRequest",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44367",
+					"path": [
+						"api",
+						"HouseRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Todas las Casas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44367/api/HouseRequest",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44367",
+					"path": [
+						"api",
+						"HouseRequest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
