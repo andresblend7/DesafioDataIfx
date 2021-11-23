@@ -51,7 +51,7 @@ namespace DesafioDataIfx.APIRest
                 app.UseDeveloperExceptionPage();
             }
 
-
+            //Swagger DOCS
             app.UseSwagger();
          
 
