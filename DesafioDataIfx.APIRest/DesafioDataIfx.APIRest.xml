@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DesafioDataIfx.APIRest</name>
+    </assembly>
+    <members>
+        <member name="M:DesafioDataIfx.APIRest.Controllers.HouseRequestController.GetHouses">
+            <summary>
+            Obtiene la lista de casas disponibles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DesafioDataIfx.APIRest.Controllers.HouseRequestController.GetMyRequests(System.Int32)">
+            <summary>
+            Obtiene la lista de casas disponibles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DesafioDataIfx.APIRest.Controllers.HouseRequestController.Apply(DesafioDataIfx.Core.ModelStructure.App.HouseRequest)">
+            <summary>
+            Realiza una solicitud de usuario para unirse a una casa
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DesafioDataIfx.APIRest.Controllers.HouseRequestController.Update(DesafioDataIfx.Core.ModelStructure.App.HouseUpdateRequest)">
+            <summary>
+            Actualiza una solicitud en espera
+            </summary>
+            <param name="data">información de la solicitud y id de la misma</param>
+            <returns></returns>
+        </member>
+        <member name="M:DesafioDataIfx.APIRest.Controllers.HouseRequestController.Delete(DesafioDataIfx.Core.ModelStructure.App.HouseDeleteRequest)">
+            <summary>
+            Inactiva una solicitud en proceso
+            </summary>
+            <param name="data">datos necesarios para inactivar una solciitud</param>
+            <returns></returns>
+        </member>
+        <member name="M:DesafioDataIfx.APIRest.Controllers.HouseRequestController.ChageState(DesafioDataIfx.Core.ModelStructure.App.HouseChangeStateRequest)">
+            <summary>
+            Cambia el estado a una solicitud únicamente si esta se encuentra en estado "En espera"
+            </summary>
+            <param name="data">Objeto con el IddRequest y el switch de aprobar/rechazar</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
